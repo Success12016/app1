@@ -1,11 +1,20 @@
 import react from 'react'
 import logo from './logo.svg';
 import './App.css';
+import { Header, Content, Footer } from './func-components'
+import Calendar from './class-components'
+
+
 
 function App() {
-    return ( <
-        h3 > Hello World! < br / > สวั สดีชาวโลก < /h3>
-    );
+    return (
+        <>
+        <Header/>
+        <p><center><Calendar/></center></p>
+        <Content/>
+        <Footer/>
+        </>
+        )
 }
 
 export default App;
