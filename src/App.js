@@ -7,5 +7,14 @@ import React from 'react'
 import Banner from './banner'
 
 export default function App() {
-return <Banner/> 
+return (
+    <>
+    <Header/>
+    <Banner/>
+    <p><center><Calendar/></center></p>
+    <Content/>
+    <Footer/>
+    </>
+    )
+     
 }
