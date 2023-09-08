@@ -1,17 +1,10 @@
-import react from 'react'
-import Banner from './banner'
-import RefsFunc from './refs-func'
-import RefsArray from './refs-array'
-import MessageBox from './state-func'
-
+import React from 'react'
+import { userContext } from './context'
+import Header from './context-header'
 export default function App() {
 return (
-    <>
-    <Banner/>
-    <RefsFunc/>
-    <RefsArray/>
-    <MessageBox/>
-    </>
-    )
-     
+<userContext.Provider value={'Tom Jerry'}>
+<Header/>
+</userContext.Provider>
+) 
 }
